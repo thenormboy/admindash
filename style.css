@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Noto Sans Display;
+    src: url(NotoSansDisplay-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    font-family: Noto Sans Display, sans-serif;
+}
+
 .container {
     margin: 0;
     height: 100vh;
@@ -8,13 +17,32 @@
 }
 
 .sidebar {
-    background: pink;
+    background: rgb(255, 128, 0);
+    color: white;
+
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    gap: 10px;
+    grid-template-rows: 40px 2fr 1fr;
+    gap: 30px;
+}
+
+.logo-section {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    justify-items: start;
+
+    padding: 10px;
+
+    font-size: larger;
+    font-weight: 600;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
 }
 
 .header {
