@@ -66,13 +66,18 @@ body {
 }
 
 .header {
-    background: lightblue;
+    background: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.other-icon {
+    height: 20px;
+    width: 20px;
 }
 
 .main {
