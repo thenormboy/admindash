@@ -51,6 +51,9 @@ body {
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(6, min-content);
     gap: 30px;
+
+    margin-top: 30px;
+    margin-left: 25px;
 }
 
 .menu-icon {
@@ -63,6 +66,8 @@ body {
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(3, min-content);
     gap: 30px;
+
+    margin-left: 25px;
 }
 
 .header {
@@ -73,11 +78,55 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    padding-left: 40px;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar object {
+    height: 20px;
+    width: 20px;
+    margin: 0 25px;
+}
+
+.search-bar input {
+    width: 75%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: gray;
+    border: none;
+    outline: none;
+}
+
+.profile-header {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 .other-icon {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.profile-pic {
+    max-width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
 }
 
 .main {
@@ -87,7 +136,7 @@ body {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
 }
 
 .project-header {
@@ -98,6 +147,15 @@ body {
 .projects {
     grid-column: 1 / 2;
     grid-row: 2 / 5;
+
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.content {
+    max-width: 350px;
+    max-height: 300px;
 }
 
 .announce-header {
