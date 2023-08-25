@@ -205,13 +205,25 @@ body {
     gap: 20px;
 }
 
+.share-icon {
+    width: 25px;
+    height: 25px;
+}
+
 .content {
     background: white;
     padding: 15px;
     border-radius: 8px;
     border-left: 8px solid rgb(255, 128, 0);
 
+    display: grid;
+    grid-auto-flow: row;
+
     max-height: 250px;
+}
+
+.icon-section {
+    place-self: end;
 }
 
 .announce-header {
